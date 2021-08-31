@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Changing Styles Programmatically</string>
+    <string name="tealText">Teal Background</string>
+    <string name="yellowText">Yellow Background</string>
+</resources>
