@@ -61,13 +61,19 @@ public class MainActivity extends AppCompatActivity {
         if (buttonName.equals("colorButton")) {
             if (clickCount % 2 == 0) {
                 labelTV.setText(R.string.tealText);
+               // myLayout.setBackgroundColor(R.color.teal_200);
                 myLayout.setBackgroundColor(getResources().getColor(R.color.teal_200));
             } else {
                 labelTV.setText(R.string.yellowText);
                 myLayout.setBackgroundColor(getResources().getColor(R.color.yellow));
             }
         } else if (buttonName.equals("otherButton")) {
-            // toggle image visability
+
+            /*
+            toggle visibility of an element on the screen
+            https://stackoverflow.com/questions/6445726/imageview-visibility-in-android
+             */
+
             if (clickCount % 2 == 0) {
                 starImage.setVisibility(View.VISIBLE);
             }
